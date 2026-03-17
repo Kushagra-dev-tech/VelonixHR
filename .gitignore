@@ -30,3 +30,9 @@ yarn-error.log
 /config/app.php
 /config/verification.php
 /storage/installed
+/vendor
+/node_modules
+.env
+/storage/logs
+/storage/framework
+/public/storage
