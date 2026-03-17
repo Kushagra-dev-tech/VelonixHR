@@ -2,7 +2,9 @@
 nixPkgs = ["php", "composer"]
 
 [phases.install]
-cmds = ["composer install --no-dev --optimize-autoloader"]
+cmds = [
+  "composer install --no-dev --optimize-autoloader --ignore-platform-req=ext-exif"
+]
 
 [start]
 cmd = "php artisan serve --host=0.0.0.0 --port=$PORT"
